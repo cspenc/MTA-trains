@@ -4,8 +4,12 @@ function showAllStations() {
   })
 }
 
+function hide() {
+  $('#data').html('');
+}
+
 function showResults(data) {
-  let final = '';
+  let final = `<a href="#" onClick="hide()">Hide</a>`;
   data.result.forEach((station) => {
     final += `<p>ID: ${station.id}, Name: ${station.name}</p>`
   })
