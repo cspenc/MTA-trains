@@ -1,3 +1,5 @@
+// http://nycpulse.herokuapp.com/api
+
 function showAllStations() {
   $.ajax({method: "GET", url: "http://mtaapi.herokuapp.com/stations"}).done(function(data) {
     showResults(data);
